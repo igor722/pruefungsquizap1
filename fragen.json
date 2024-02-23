@@ -9726,24 +9726,6 @@
     "quelle": "Lernfeld 5"
   },
   {
-    "question": "Was bedeutet Funktionalität in Bezug auf Softwarequalität?",
-    "options": [],
-    "correctAnswer": "Funktionalität bezieht sich auf die Fähigkeit der Software, die gewünschten Aufgaben und Funktionen zu erfüllen.",
-    "quelle": "Lernfeld 5"
-  },
-  {
-    "question": "Was bedeutet Zuverlässigkeit in Bezug auf Softwarequalität?",
-    "options": [],
-    "correctAnswer": "Zuverlässigkeit bezieht sich auf die Fähigkeit der Software, unter bestimmten Bedingungen konstant zu arbeiten und zu funktionieren.",
-    "quelle": "Lernfeld 5"
-  },
-  {
-    "question": "Was bedeutet Benutzbarkeit in Bezug auf Softwarequalität?",
-    "options": [],
-    "correctAnswer": "Benutzbarkeit bezieht sich darauf, wie einfach die Software zu bedienen und zu verstehen ist.",
-    "quelle": "Lernfeld 5"
-  },
-  {
     "question": "Was ist Informationssicherheit?",
     "options": [
       "Informationssicherheit ist der Schutz von Informationen vor Naturkatastrophen.",
