@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prüfungslernplattform</title>
+    <link rel="stylesheet" href="style.css"/>
+  </head>
+  <body onload="agreement()">
+    <div id="question-container">
+      <p id="question-nr"></p>
+      <h2>Quiz zur optimalen Prüfungsvorbereitung</h2>
+      <p id="titel1"></p>
+      <p id="titel2"></p>
+      <p id="points"></p>
+      <p id="question"></p>
+      <div id="options"></div>
+      <p id="source"></p>
+      <button id="previous-question" onclick="previousQuestion();">Zurück</button>
+      <button onclick="checkAnswer();">Antwort bestätigen</button>
+      <!-- Progress-Bar -->
+      <div id="progress-container">
+        <div id="progress-actual"></div>
+      </div>
+    </div>
+        
+    <!-- Richtige Antwort Pop-Up -->
+    <div id="correct-pop-up">
+      <h3>Richtig!</h3>
+    </div>
+
+    <!-- Falsche Antwort Pop-Up -->
+    <div id="false-pop-up">
+      <h3>Falsch!</h3>
+      <p id="false-p"></p>
+      <button id="popup-close" onclick="closePopup()">x</button>
+    </div>
+    
+    <!-- Game Over PopUp -->
+    <div id="game-over-container">
+      <div id="game-over">
+      
+      </div>
+      <p id="end-points">Punktzahl: </p>
+      <p id="percentage"></p>
+      <button onclick="newGame()">Neustarten</button>
+      <!-- <button onclick="exportFalse()">Falsche fragen exportieren</button> -->
+    </div>
+    
+    <script src="script.js"></script>
+  </body>
+</html>
+

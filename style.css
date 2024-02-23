@@ -1,0 +1,184 @@
+/* Grundlegende Einstellungen */
+body {
+  font-family: Arial, sans-serif;
+  /* Moderne, leicht lesbare Schriftart */
+  line-height: 1.6;
+  /* Guter Zeilenabstand für Lesbarkeit */
+  background-color: #f4f4f4;
+  /* Ein sanfter Hintergrund, der die Augen nicht überfordert */
+  padding: 20px;
+  /* Etwas Abstand zum Rand des Browsers */
+  margin: 0;
+
+}
+
+/* Container und Layout */
+#question-container {
+  background-color: #ffffff;
+  /* Helle Hintergrundfarbe für den Hauptinhalt */
+  padding: 20px;
+  /* Innerer Abstand */
+  border-radius: 8px;
+  /* Leicht abgerundete Ecken */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* Subtiler Schatten für Tiefe */
+  max-width: 800px;
+  /* Maximale Breite für bessere Lesbarkeit auf breiten Bildschirmen */
+  margin: auto;
+  /* Zentriert den Container */
+}
+
+h2 {
+  color: #333;
+  /* Dunkle, aber nicht harte Farbe für Überschriften */
+  margin-bottom: 16px;
+  /* Abstand zur Trennung vom folgenden Inhalt */
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+p {
+  color: rgb(155, 154, 151);
+  /* Weichere Farbe für den Text, um die Augen zu schonen */
+  margin-bottom: 10px;
+  /* Standardabstand zwischen Absätzen */
+
+}
+
+/* Optionen und Links */
+#options {
+  margin: 20px 0;
+  /* Abstand oben und unten für die Optionengruppe */
+}
+
+#options button {
+  display: block;
+  /* Jede Option wird auf einer neuen Zeile angezeigt */
+  width: 100%;
+  /* Maximale Breite, um Klickfläche zu erhöhen */
+  padding: 10px;
+  /* Bequemer Klickbereich */
+  margin-bottom: 10px;
+  /* Abstand zwischen den Optionen */
+  background-color: #e9e9e9;
+  /* Dezent hervorgehobene Hintergrundfarbe */
+  border: none;
+  /* Keine Ränder, um den Stil zu vereinfachen */
+  border-radius: 4px;
+  /* Leicht abgerundete Ecken */
+  cursor: pointer;
+  /* Cursor verändert sich zum Klicken */
+  transition: background-color 0.3s;
+  /* Weicher Übergang bei Hover */
+}
+
+#options button:hover {
+  background-color: #dcdcdc;
+  /* Farbwechsel beim Darüberfahren für Feedback */
+}
+
+/* Navigationsbuttons */
+button {
+  background-color: #4CAF50;
+  /* Ansprechende, positive Farbgebung */
+  color: white;
+  /* Kontrastreicher Text für Lesbarkeit */
+  border: none;
+  /* Entfernt Standard-Browser-Styling */
+  padding: 10px 20px;
+  /* Vertikaler und horizontaler Abstand */
+  border-radius: 5px;
+  /* Moderne, abgerundete Ecken */
+  cursor: pointer;
+  /* Zeigt an, dass es klickbar ist */
+  margin-right: 10px;
+  /* Abstand zwischen den Buttons */
+}
+
+button:hover {
+  background-color: #45a049;
+  /* Dunklerer Ton beim Darüberfahren für visuelles Feedback */
+}
+
+/* Quellenangabe */
+#source {
+  font-size: 0.85rem;
+  /* Kleinere Schriftgröße für weniger wichtigen Text */
+  color: #777;
+  /* Unauffällige Farbe */
+  margin-top: 20px;
+  /* Abstand vom Hauptinhalt */
+}
+
+/* PROGRESS BAR */
+#progress-container {
+  width: 100%;
+  height: 20px;
+  border: 1px solid black;
+}
+
+#progress-actual {
+  height: 20px;
+  width: 0;
+  background: #45a049;
+}
+
+/* POPUP */
+#correct-pop-up,
+#false-pop-up {
+
+  visibility: hidden;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 20px;
+  position: absolute;
+  z-index: 1;
+  top: 25%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  margin-left: -80px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+
+@media only screen and (max-width: 600px) {
+
+  #correct-pop-up,
+  #false-pop-up {
+    left: 70%;
+  }
+}
+
+#game-over-container {
+  visibility: hidden;
+  width: 100%;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  top: 0%;
+  min-height: 100%;
+}
+
+#progress-container {
+
+  margin-top: 10px;
+
+  border-radius: 5px;
+
+}
+
+#progress-container {
+
+  border: 1px solid green;
+
+}
+
+#question-nr {
+  text-align: end;
+  margin: 0;
+}
